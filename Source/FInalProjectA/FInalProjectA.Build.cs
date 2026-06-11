@@ -18,8 +18,10 @@ public class FInalProjectA : ModuleRules
 			"StateTreeModule",
 			"GameplayStateTreeModule",
 			"UMG",
-			"Slate"
-		});
+			"Slate",
+            "Niagara",
+            "proceduralmeshcomponent"
+        });
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
