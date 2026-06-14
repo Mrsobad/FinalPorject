@@ -9,6 +9,7 @@
 
 class USphereComponent;
 class UProjectileMovementComponent;
+class UNiagaraSystem;
 
 
 UCLASS(config=Game)
@@ -29,6 +30,18 @@ class FINALPROJECTA_API ASplatShootere : public AShooterProjectile
 
 	UPROPERTY(EditAnywhere)
 	UMaterial* baseMat;
+
+	UPROPERTY()
+	FLinearColor randColor;
+
+	UPROPERTY(EditAnywhere)
+	UMaterialInterface* projMat;
+
+	UPROPERTY()
+	UMaterialInstanceDynamic* dmiMat;
+
+	UPROPERTY(EditAnywhere)
+	UNiagaraSystem* colorP;
 	
 public:	
 	// Sets default values for this actor's properties
