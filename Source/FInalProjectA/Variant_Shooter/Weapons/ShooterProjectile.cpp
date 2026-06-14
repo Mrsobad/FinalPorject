@@ -30,7 +30,7 @@ AShooterProjectile::AShooterProjectile()
 
 	ProjectileMovement->InitialSpeed = 3000.0f;
 	ProjectileMovement->MaxSpeed = 3000.0f;
-	ProjectileMovement->bShouldBounce = true;
+	ProjectileMovement->bShouldBounce = false;
 
 	// set the default damage type
 	HitDamageType = UDamageType::StaticClass();
